@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Developer News{% endblock %}</title>
+        <!-- <link rel="stylesheet" href="assets/vendor/spectre.min.css"> -->
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block header %}
+            <div style="text-align:center;">
+<pre>     _____          ___                        ___           ___           ___           ___     
+    /  /::\        /  /\          ___         /__/\         /  /\         /__/\         /  /\    
+   /  /:/\:\      /  /:/_        /__/\        \  \:\       /  /:/_       _\_ \:\       /  /:/_   
+  /  /:/  \:\    /  /:/ /\       \  \:\        \  \:\     /  /:/ /\     /__/\ \:\     /  /:/ /\  
+ /__/:/ \__\:|  /  /:/ /:/_       \  \:\   _____\__\:\   /  /:/ /:/_   _\_ \:\ \:\   /  /:/ /::\ 
+ \  \:\ /  /:/ /__/:/ /:/ /\  ___  \__\:\ /__/::::::::\ /__/:/ /:/ /\ /__/\ \:\ \:\ /__/:/ /:/\:\
+  \  \:\  /:/  \  \:\/:/ /:/ /__/\ |  |:| \  \:\~~\~~\/ \  \:\/:/ /:/ \  \:\ \:\/:/ \  \:\/:/~/:/
+   \  \:\/:/    \  \::/ /:/  \  \:\|  |:|  \  \:\  ~~~   \  \::/ /:/   \  \:\ \::/   \  \::/ /:/ 
+    \  \::/      \  \:\/:/    \  \:\__|:|   \  \:\        \  \:\/:/     \  \:\/:/     \__\/ /:/  
+     \__\/        \  \::/      \__\::::/     \  \:\        \  \::/       \  \::/        /__/:/   
+                   \__\/           ~~~~       \__\/         \__\/         \__\/         \__\/    </pre>
+            </div>
+         
+            <header style="margin: 1% 20%;">
+                <hr>
+                <nav style="background-color: rgba(23, 19, 19, 0.08);padding: 1%;font-size: large;">
+                    <span><strong><a href="/" style="text-decoration:none;color:black;">DEV NEWS</a></strong></span>
+                    &nbsp;
+                    <a href="#T">Top</a>
+                    &nbsp;|&nbsp;
+                    <a href="#N">New</a>
+                    &nbsp;|&nbsp;
+                    <a href="#S">Submit</a>
+                    <span style="float:right;">
+                        <a href="#user">username</a> (12)
+                        &nbsp;
+                        <a href="#logout">logout</a>
+                    </span>
+                </nav>
+            </header>
+        {% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %}
+            <footer style="margin: 5em 20% 1em;">
+                <hr>
+                <nav style="text-align: center;font-size:small;">
+                    <a href="#T">Guidelines</a>
+                    &nbsp;•&nbsp;
+                    <a href="#N">Formatting</a>
+                    &nbsp;•&nbsp;
+                    <a href="#S">Contact</a>
+                    &nbsp;•&nbsp;
+                    <a href="#S">UP Interactive Society</a>
+                </nav>
+            </footer>
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

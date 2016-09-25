@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section style="margin: 1% 20%;">
+        <ol style="padding: 1em;">
+            {% for i in 0..29 %}
+            <li class="list-item">
+                <div>
+                    <a href="#up" class="item-upvote">&#x25B2;</a>
+                    <a href="##" class="item-link">Naval Academy to name its cyber building after Rear Admiral Grace Hopper</a>
+                </div>
+                <span class="item-meta">{{ i + 3 }} points by <a href="#2">Foo</a> 14 hours ago &nbsp; | &nbsp; <a href="#comments">10 comments</a></span>
+            </li>
+            {% endfor %}
+        </ol>
+        <a style="margin-left: 20px;" href="#more">More</a>
+    </section>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .list-item {
+            padding-left: 3px;
+            margin-bottom: 5px;
+        }
+        
+        .item-upvote {
+            text-decoration: none;
+            font-size: x-small;
+            vertical-align: top;
+        }
+        
+        .item-link {
+            text-decoration: none;
+        }
+        
+        .item-meta {
+            color: gray;
+            font-size: small;
+            margin-left: 13px;
+            margin-top: 4px;
+        }
+        
+        .item-meta a {
+            color: gray;
+        }
+    </style>
+{% endblock %}

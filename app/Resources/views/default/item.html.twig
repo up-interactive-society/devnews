@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section style="margin: 1.5em 20%;">
+        <section>
+            <div>
+                <a href="#up" class="item-upvote">&#x25B2;</a>
+                <a href="##" class="item-link" style="font-size: large;">
+                    Naval Academy to name its cyber building after Rear Admiral Grace Hopper
+                </a>
+            </div>
+            <span class="item-meta">3 points by <a href="#2">Foo</a> 14 hours ago &nbsp; | &nbsp; <a href="#comments">10 comments</a></span>
+            <section style="margin-top: 1em;margin-left: 13px;line-height:1.25em;">
+            Sorry if this seems a bit pointless, but for the first time just now I visited https://example.com/
+Expected to find the typical "spammy" parked domain page, but instead learned this: http://www.iana.org/domains/reserved
+
+Had no clue about reserved domain names before today! You?
+            </section>
+            <section style="margin: 1.5em 13px;">
+                <form>
+                    <textarea style="display:block;width:100%;" rows="7"></textarea>
+                    <input style="margin-top: 1.5em;" type="submit" value="Add Comment">
+                </form>
+            </section>
+        </section>
+        <section style="margin-top: 2em;">
+            <section class="item-comment-entry">
+                <header>
+                <a href="#up" class="item-upvote">&#x25B2;</a>
+                <span class="comment-author"><a href="#b">Barlog</a> <small>9 hours ago</small></span>
+                </header>
+                <section class="item-comment">
+                Popular Mechanics found different results when they did a similar study [0].
+    >"One disheartening result was that our package received more abuse when marked "Fragile" or "This Side Up." The carriers flipped the package more, and it registered above-average acceleration spikes during trips for which we requested careful treatment."
+    [0] http://www.popularmechanics.com/technology/reviews/a6284/whi...
+                </section>
+                <br>
+                <a class="item-comment-reply" href="#res">Reply to this comment</a>
+            </section>
+            <section class="item-comment-entry" style="margin-left:1.25em;">
+                <header>
+                <a href="#up" class="item-upvote">&#x25B2;</a>
+                <span class="comment-author"><a href="#b">Barlog</a> <small>9 hours ago</small></span>
+                </header>
+                <section class="item-comment">
+                Popular Mechanics found different results when they did a similar study [0].
+>"One disheartening result was that our package received more abuse when marked "Fragile" or "This Side Up." The carriers flipped the package more, and it registered above-average acceleration spikes during trips for which we requested careful treatment."
+[0] http://www.popularmechanics.com/technology/reviews/a6284/whi...
+                </section>
+                <br>
+                <a class="item-comment-reply" href="#res">Reply to this comment</a>
+            </section>
+            <section class="item-comment-entry" style="margin-left:2.5em;">
+                <header>
+                <a href="#up" class="item-upvote">&#x25B2;</a>
+                <span class="comment-author"><a href="#b">Barlog</a> <small>9 hours ago</small></span>
+                </header>
+                <section class="item-comment">
+                Popular Mechanics found different results when they did a similar study [0].
+>"One disheartening result was that our package received more abuse when marked "Fragile" or "This Side Up." The carriers flipped the package more, and it registered above-average acceleration spikes during trips for which we requested careful treatment."
+[0] http://www.popularmechanics.com/technology/reviews/a6284/whi...
+                </section>
+                <br>
+                <a class="item-comment-reply" href="#res">Reply to this comment</a>
+            </section>
+            <section class="item-comment-entry" style="margin-left:1.25em;">
+                <header>
+                <a href="#up" class="item-upvote">&#x25B2;</a>
+                <span class="comment-author"><a href="#b">Barlog</a> <small>9 hours ago</small></span>
+                </header>
+                <section class="item-comment">
+                Popular Mechanics found different results when they did a similar study [0].
+>"One disheartening result was that our package received more abuse when marked "Fragile" or "This Side Up." The carriers flipped the package more, and it registered above-average acceleration spikes during trips for which we requested careful treatment."
+[0] http://www.popularmechanics.com/technology/reviews/a6284/whi...
+                </section>
+                <br>
+                <a class="item-comment-reply" href="#res">Reply to this comment</a>
+            </section>
+            {% for i in 0..9 %}
+            <section class="item-comment-entry">
+                <header>
+                <a href="#up" class="item-upvote">&#x25B2;</a>
+                <span class="comment-author"><a href="#b">Barlog</a> <small>9 hours ago</small></span>
+                </header>
+                <section class="item-comment">
+                Popular Mechanics found different results when they did a similar study [0].
+>"One disheartening result was that our package received more abuse when marked "Fragile" or "This Side Up." The carriers flipped the package more, and it registered above-average acceleration spikes during trips for which we requested careful treatment."
+[0] http://www.popularmechanics.com/technology/reviews/a6284/whi...
+                </section>
+                <br>
+                <a class="item-comment-reply" href="#res">Reply to this comment</a>
+            </section>
+            {% endfor %}
+        </section>
+    </section>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .item-comment-entry {
+            margin-top: 2em; 
+        }
+        .item-upvote {
+            text-decoration: none;
+            font-size: x-small;
+            vertical-align: top;
+        }
+        .item-link {
+            text-decoration: none;
+        }
+        .item-meta {
+            color: gray;
+            font-size: small;
+            margin-left: 13px;
+        }
+        .item-meta a, .comment-author, .comment-author a {
+            color: gray;
+        }
+        .item-comment {
+            margin-top: 1em;
+            margin-left: 13px;
+            line-height:1.25em;
+        }
+        a.item-comment-reply {
+            margin-left: 13px;
+        }
+    </style>
+{% endblock %}
